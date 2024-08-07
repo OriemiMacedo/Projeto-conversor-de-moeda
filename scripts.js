@@ -19,7 +19,7 @@ function convertValues() {
 
 
     if (currencySelect.value == "euro") {
-        currencyValueToConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(inputCurrencyValue / euroToday)
